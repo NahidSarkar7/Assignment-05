@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body   class="bg-blue-50 p-5" >
+
+    <header >
+        <section class="">
+            <nav class="flex justify-between bg-white p-5 rounded-lg w-10/12 mx-auto">
+                <div class="flex items-center gap-3">
+                    <img src="assets/logo.png" alt="">
+                    <h1 class="poppins text-xl">Dev<span class="text-xl font-bold poppins">Board</span></h1>
+                </div>
+
+                <div class="flex  items-center gap-2">
+                    <button id="back-btn" class="btn btn-primary">Back to Desk</button>
+                </div>
+
+              
+            </nav>
+
+            <h1 class="text-center p-4 font-bold text-2xl poppins">Blogs</h1>
+
+            <!-- parent div  -->
+
+            <div class="rounded-lg w-10/12 mx-auto">      
+            <div class="bg-white p-3 ">
+
+                <h1 class="text-lg font-bold poppins">Question-1: What are the different ways to select an element in the DOM?</h1>
+
+            </div>
+
+            <div class="bg-white p-3 mt-1 mb-5">
+                <p class="poppins">There are many way to select an element in JavaScript ,however those are | Document.getElementByTagName('tag name'), Document.getElementsByTagName('class name'), Document.getElementByTagId('id name'), Document.querySelector('#id name/.class name'), Document.querySelectorAll(#id name/.class name')| this are commonly use in js to select element</p>
+            </div>
+
+
+            </div>
+            <div class="rounded-lg w-10/12 mx-auto">      
+            <div class="bg-white p-3 ">
+
+                <h1 class="text-lg font-bold poppins">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+
+            </div>
+
+            <div class="bg-white p-3 mt-1 mb-5">
+                <p class="poppins">In JavaScript innerText are return you a value whice inlcluding those element but the other one innerContent is return full content inlcluding hidden tag element if there has any hidden tag with content also and the innerHTML is only return the tag also content but we can't get access of those content also we can set the tag using innerHTML</p>
+            </div>
+
+
+            </div>
+            <div class="rounded-lg w-10/12 mx-auto">      
+            <div class="bg-white p-3 ">
+
+                <h1 class="text-lg font-bold poppins">Question-3: What is event delegation in the DOM?</h1>
+
+            </div>
+
+            <div class="bg-white p-3 mt-1 mb-5">
+                <p class="poppins">Event delegation is one kind of technique when you use it you can easily handle more and more event and it make code readable,structured</p>
+            </div>
+
+
+            </div>
+            <div class="rounded-lg w-10/12 mx-auto">      
+            <div class="bg-white p-3 ">
+
+                <h1 class="text-lg font-bold poppins">Question-4: What is event bubbling in the DOM?</h1>
+
+            </div>
+
+            <div class="bg-white p-3 mt-1 mb-5">
+                <p class="poppins">Basically bubbling is a event propagation in DOM where if i trigger the only specific one then it will work after the parent one</p>
+            </div>
+
+
+            </div>
+            <div class="rounded-lg w-10/12 mx-auto ">      
+            <div class="bg-white p-3 ">
+
+                <h1 class="text-lg font-bold poppins">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+
+            </div>
+
+            <div class="bg-white p-3 mt-1 mb-5">
+                <p class="poppins">Creating element in JavaScript are too easy using Document.createElement('element tag') and then create an element if anyone want to add element then where we want add element for example element.classlist.add('what want to add') this help you to add element and if wanna remove then select the element and directly call remove() method.</p>
+            </div>
+
+
+            </div>
+         
+           
+        </section>
+
+    </header>
+    <script src="secondscript.js"></script>
+</body>
+</html>

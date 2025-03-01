@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body id="body"  class="bg-blue-50 p-5" >
+
+    <header >
+        <section class="">
+            <nav class="flex justify-between bg-white p-5 rounded-lg w-10/12 mx-auto">
+                <div class="flex items-center gap-3">
+                    <img src="assets/logo.png" alt="">
+                    <h1 class="poppins text-xl">Dev<span class="text-xl font-bold poppins">Board</span></h1>
+                </div>
+
+                <div class="flex  items-center gap-2">
+                    <img  src="assets/checkbox.png" alt="">
+                    <h3 id="increasNumber" class="text-xl font-bold mr-5">23</h3>
+                    <img id="circle-image-btn" src="assets/theme-btn.png" alt="">
+                </div>
+
+              
+            </nav>
+
+         
+           
+        </section>
+
+    </header>
+
+    <main class="flex justify- gap-4 ml-40 w-7/12  relative">
+
+        <section class="bg-white p-4 rounded-lg mt-3 min-w-full">
+
+            <!-- top-3 card div -->
+
+            <div class="flex pb-3 border-b-2">
+
+                <div class="flex gap-4 items-center bg-blue-50 rounded-lg p-3  w-4/12">
+                    <div class=" bg-white rounded-full">
+                        <img class="w-12 h-12 p-3" src="assets/checkbox.png" alt="">
+                    </div>
+
+                    <div>
+                        <h2 class="poppins">Task Assigned</h2>
+                        <h2 id="taskNumber" class="text-2xl poppins font-extrabold">6</h2>
+                    </div>
+                </div>
+
+                <div id="discover" class="flex ml-5 gap-4 items-center background rounded-lg p-3 w-6/12 ">
+                    <div class=" ">
+                        <img class="w-12 h-12 ml-7 " src="assets/board.png" alt="">
+                    </div>
+
+                    <div>
+                        <!-- <h2 class="poppins">Task Assigned</h2> -->
+                        <h2 class="text-xl text-white poppins font-extrabold">Discover Something <br> New Today!</h2>
+                    </div>
+                </div>
+
+                <div class="flex ml-5 gap-4 items-center bg-blue-50 rounded-lg p-3  w-4/12">
+                    <div class=" bg-white rounded-full">
+                        <img class="w-12 h-12 p-3" src="assets/calender.png" alt="">
+                    </div>
+
+                    <div id="datee">
+                        <h2 id="week" class="poppins">Wed ,
+                             </h2>
+                        <h2 class="text-lg poppins font-extrabold"><span id="month"></span> <span id="day"></span> <span id="year"></span></h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- main-div here has 6 card -->
+
+            <!-- grid this -->
+
+          <div class="grid grid-cols-3 gap-x-4">
+
+
+
+            <div class="flex">
+
+                <div class="bg-blue-50 mt-5 p-5 rounded-xl">
+                    <span class="poppins text-lg bg-white p-2 rounded-lg">ShopEase</span>
+                    <h1 id="card-1" class="text-lg poppins font-semibold mt-3">Fix Mobile Button Issue </h1>
+                    <p class="bg-white p-3 text-gray-400 poppins rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p>
+
+                      
+
+                    <div class="flex justify-between mt-3">
+                      <div>
+                        <span class="poppins text-gray-400">Deadline</span>
+                        <h3 class="poppins font-semibold">28 February 2025</h3>
+                      </div>
+
+                       <div>
+                        <button  id="Completed1" class="btn btn-primary">Completed</button>
+                       </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div> 
+
+
+            <div class="flex">
+
+                <div class="bg-blue-50 mt-5 p-5 rounded-xl">
+                    <span class="poppins text-lg bg-white p-2 rounded-lg">CloudSync</span>
+                    <h1 id="card-2" class="text-lg poppins font-semibold mt-3">Add Dark Mode</h1>
+                    <p class="bg-white p-3 text-gray-400 poppins rounded-lg">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+
+                      
+
+                    <div class="flex justify-between mt-3">
+                      <div>
+                        <span class="poppins text-gray-400">Deadline</span>
+                        <h3 class="poppins font-semibold">28 February 2025</h3>
+                      </div>
+
+                       <div>
+                        <button id="Completed2" class="btn btn-primary">Completed</button>
+                       </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div> 
+
+
+            <div class="flex">
+
+                <div class="bg-blue-50 mt-5 p-5 rounded-xl">
+                    <span class="poppins text-lg bg-white p-2 rounded-lg">SwiftPay</span>
+                    <h1 id="card-3" class="text-lg poppins font-semibold mt-3">Optimize  Home page  </h1>
+                    <p class="bg-white p-3 text-gray-400 poppins rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p>
+
+                      
+
+                    <div class="flex justify-between mt-3">
+                      <div>
+                        <span class="poppins text-gray-400">Deadline</span>
+                        <h3 class="poppins font-semibold">28 February 2025</h3>
+                      </div>
+
+                       <div>
+                        <button id="Completed3" class="btn btn-primary">Completed</button>
+                       </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div> 
+
+
+            <div class="flex">
+
+                <div class="bg-blue-50 mt-5 p-5 rounded-xl">
+                    <span class="poppins text-lg bg-white p-2 rounded-lg">Meta</span>
+                    <h1 id="card-4" class="text-lg poppins font-semibold mt-3">Add new emoji 🤲</h1>
+                    <p class="bg-white p-3 text-gray-400 poppins rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p>
+
+                      
+
+                    <div class="flex justify-between mt-3">
+                      <div>
+                        <span class="poppins text-gray-400">Deadline</span>
+                        <h3 class="poppins font-semibold">28 February 2025</h3>
+                      </div>
+
+                       <div>
+                        <button id="Completed4" class="btn btn-primary">Completed</button>
+                       </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div> 
+
+
+            <div class="flex">
+
+                <div class="bg-blue-50 mt-5 p-5 rounded-xl">
+                    <span class="poppins text-lg bg-white p-2 rounded-lg">Google LLC</span>
+                    <h1 id="card-5" class="text-lg poppins font-semibold mt-3">Integrate OpenAI API  </h1>
+                    <p class="bg-white p-3 text-gray-400 poppins rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p>
+
+                      
+
+                    <div class="flex justify-between mt-3">
+                      <div>
+                        <span class="poppins text-gray-400">Deadline</span>
+                        <h3 class="poppins font-semibold">28 February 2025</h3>
+                      </div>
+
+                       <div>
+                        <button id="Completed5" class="btn btn-primary">Completed</button>
+                       </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div> 
+
+
+            <div class="flex">
+
+                <div class="bg-blue-50 mt-5 p-5 rounded-xl">
+                    <span class="poppins text-lg bg-white p-2 rounded-lg">Glassdoar</span>
+                    <h1 id="card-6" class="text-lg poppins font-semibold mt-3">Improve Job searching </h1>
+                    <p class="bg-white p-3 text-gray-400 poppins rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p>
+
+                      
+
+                    <div class="flex justify-between mt-3">
+                      <div>
+                        <span class="poppins text-gray-400">Deadline</span>
+                        <h3 class="poppins font-semibold">28 February 2025</h3>
+                      </div>
+
+                       <div>
+                        <button id="Completed6"  class="btn btn-primary ">Completed</button>
+                       </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div> 
+
+
+
+
+
+
+          </div>
+
+
+
+        </section>
+
+
+        <section>
+
+            
+  <!-- sohokari div -->
+
+ <div id="container" class=" text-center mt-2 rounded-lg absolute min-h-full w-5/12 bg-white ">
+
+  <div class="flex mb-2 mt-5 justify-center items-center">
+
+  <img class="w-5" src="assets/activity.png" alt="">
+   <span class="poppins ml-2">Activity Log</span>
+            
+  </div>
+            
+<div class="pb-4 border-b-2 w-4/5 mx-auto">
+    <button id="clear" class="btn btn-primary">Clear history</button>
+</div>
+
+  
+
+
+
+     <div id="father-of-container">
+  
+
+
+
+     </div>
+
+
+
+
+
+                               
+      
+         </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+
+
+    
+ <script src="maindevboard.js"></script>   
+
+</body>
+</html>
