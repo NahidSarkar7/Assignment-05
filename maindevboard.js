@@ -373,7 +373,7 @@ p.style.marginTop='10px';
 containValue.appendChild(p);
 
 
-alert('Congratulation! you have completed all current TASK')
+alert('Congratulations! you have completed all current task')
 
     
 });
